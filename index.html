@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment_system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class ="container">
+<body>
+    <p>
+    <h1 style="text-align: center;">Payment Page</h1>
+   <hr>
+    <h2 >Personal Information</h2> <br></p>
+    
+    <p>
+       <form action="#">
+         <p>Username : *</p>
+        <input type="text" name ="username" placeholder ="Pawan Aryal" required>
+    </p>
+
+    <legend>
+        
+    <p>
+        Gender:  *<br>
+
+       Male <input type="radio" name="age" id="ma" required>
+       Female <input type="radio" name="age" id="fe" required>
+       Third Gender <input type="radio" name="age" id ="third" required>
+    
+    </p> 
+    <p>
+       Address
+       <textarea name="address" id="location" cols="30" rows="10" placeholder ="Enter your address"></textarea>
+    </p>
+    <p>
+        Email :   *<input type="email" name="email" id="email" placeholder="pawan@gmail.com" required>
+    </p>
+    <p>
+        Zip code :   *<input type="number" name="code" id="code" placeholder="33600" required>
+
+    
+    </p>
+
+    
+
+
+     </legend>
+    <h2>Card Information</h2>
+    <!-- <form action="/payment" method="post"></form> -->
+    <p>
+        Card Type:   *  <img src="card.png" alt="card" width="120px" !important>
+        <select name="cardtype" id="cardtype" required>
+            <option value="">--Select a card type</option>
+            <option value="Visa">Visa</option>
+            <option value="MasterCard">MasterCard</option>
+            <option value="AmericanExpress">AmericanExpress</option>
+
+        </select>
+        </p>
+        <p>
+            Card Number:   *<input type="number" name="cardno" id="cardno" placeholder=" 1111-22222-4444-3333"  required>
+
+        </p>
+
+    <p>
+        Expire date:   *<input type="date" name="date" id="date"  required>
+    </p>
+    <p>
+        CVV:  *<input type="password" name="code" id="code"  placeholder ="123" required >
+    </p>
+    <input type="submit" value="Pay Now">
+    <span class="end"><input type="reset" value="Reset"></span>
+    </form>
+    
+</body>
+</div>
+</html>
